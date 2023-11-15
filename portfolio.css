@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+}
+.logo span{
+    color: skyblue;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+    
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    transition: 0.4s linear;
+
+}
+.menu a:hover:before{
+    width: 80%;
+}
+.sub a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: black;
+    border-radius: 8px;
+    transition: 0.4s;
+
+}
+.sub a:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+
+}
+.headtext {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headtext h1{
+    font-size: 3em;
+}
+.headtext a{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 10px 20px ;
+    letter-spacing: 4px;
+    position: relative;
+}
+.headtext a:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: skyblue;
+    z-index: -1;
+    border: 1px solid black;
+}
+#man{
+    position: absolute;
+    left: 350px;
+    bottom: 20px;
+}
